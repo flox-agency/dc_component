@@ -6,14 +6,14 @@
 		</title>
 	</head>
 	<body>
-
-	<script type="text/javascript">
+		<script type="text/javascript">
 			var baseURL = (("https:" == document.location.protocol) ? "https://localhost/dclivechat/" : "http://localhost/dclivechat/");
 			document.write(unescape("%3Cscript src='" + baseURL + "dclivechat_tracker.js' type='text/javascript'%3E%3C/script%3E"));
-			</script><script type="text/javascript">
+		</script>
+		<script type="text/javascript">
 			try {
-				var tracker = dcTracker();
-				alert(tracker);
+				var tracker = dcTracker;
+				alert(tracker.getText());
 			} catch( err ) {}
 		</script>
 	</body>
