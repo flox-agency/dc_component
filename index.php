@@ -4,6 +4,9 @@
 		<title>
 			Page de simulation
 		</title>
+
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
 	</head>
 	<body>
 		<script type="text/javascript">
@@ -13,7 +16,8 @@
 		<script type="text/javascript">
 			try {
 				var tracker = dcTracker;
-				alert(tracker.getText());
+				tracker.setUrl(window.location);
+				tracker.trackPageView();
 			} catch( err ) {}
 		</script>
 	</body>
