@@ -18,7 +18,7 @@
 				var tracker = dcTracker;
 				tracker.setUrl(window.location);
 				tracker.trackPageView();
-			} catch( err ) {}
+			} catch( err ) { console.log(err);}
 		</script>
 	</body>
 </html>
